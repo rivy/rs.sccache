@@ -224,7 +224,7 @@ fn run_server_process() -> Result<ServerStartup> {
             ptr::null_mut(),
             FALSE,
             CREATE_UNICODE_ENVIRONMENT
-                | DETACHED_PROCESS
+                // | DETACHED_PROCESS
                 | CREATE_NEW_PROCESS_GROUP
                 | CREATE_NO_WINDOW,
             envp.as_mut_ptr() as LPVOID,
